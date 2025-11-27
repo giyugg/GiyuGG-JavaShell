@@ -5,8 +5,11 @@ public class MainShell {
         Scanner shell = new Scanner(System.in);
 
         System.out.println("Welcome to GiyuGG Shell. Please type 'help' for the list of commands.");
-        System.out.print("GiyuGG_Shell_CMDLine>> ");
-        String cmdLine = shell.nextLine();
+
+        boolean running = true;
+        while (running) {
+            System.out.print("GiyuGG_Shell_CMDLine>> ");
+            String cmdLine = shell.nextLine().trim();
 
         switch (cmdLine) {
             case "help":
