@@ -15,15 +15,15 @@ public class MainShell {
                 case "help":
                     help();
                     break;
-                case "exit":
-                    running = false;
-                    System.out.println("Exiting GiyuGG_Shell. Goodbye!");
-                    break;
                 case "info":
                     info();
                     break;
                 case "patch":
                     patch();
+                    break;
+                case "exit":
+                    running = false;
+                    System.out.println("Exiting GiyuGG_Shell. Goodbye!");
                     break;
                 default:
                     if (!cmdLine.isEmpty()) {
