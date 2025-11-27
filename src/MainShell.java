@@ -44,4 +44,12 @@ public class MainShell {
         System.out.println("patch                                | Version Information");
         System.out.println("exit                                 | Exit GiyuGG_Shell");
     }
+
+    public static void info() {
+        System.out.println("Kyle — GiyuGG: Developer info placeholder.");
+    }
+
+    public static void patch() {
+        System.out.println("GiyuGG_Shell v0.1 — Patch/Version info placeholder.");
+    }
 }
