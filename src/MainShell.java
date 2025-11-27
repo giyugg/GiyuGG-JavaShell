@@ -11,11 +11,29 @@ public class MainShell {
             System.out.print("GiyuGG_Shell_CMDLine>> ");
             String cmdLine = shell.nextLine().trim();
 
-        switch (cmdLine) {
-            case "help":
-                help();
-                break;
+            switch (cmdLine) {
+                case "help":
+                    help();
+                    break;
+                case "exit":
+                    running = false;
+                    System.out.println("Exiting GiyuGG_Shell. Goodbye!");
+                    break;
+                case "info":
+                    info();
+                    break;
+                case "patch":
+                    patch();
+                    break;
+                default:
+                    if (!cmdLine.isEmpty()) {
+                        System.out.println("Unknown command: " + cmdLine + ". Type 'help'.");
+                    }
+                    break;
+            }
         }
+
+        shell.close();
     }
 
     public static void help() {
